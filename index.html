@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Introduction | Communication dans les systèmes embarqués par l&#39;emploi d&#39;agents mobiles</title>
+        <title>Introduction | Book Title</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Etat du document: Brouillon d&#39;un plan">
+        <meta name="description" content="Book introduction here.">
         <meta name="generator" content="GitBook 2.1.0">
         
         
@@ -32,7 +32,7 @@
     <body>
         
         
-    <div class="book" data-level="0" data-basepath="." data-revision="Wed Jul 29 2015 23:15:20 GMT+0200 (CEST)">
+    <div class="book" data-level="0" data-basepath="." data-revision="Wed Jul 29 2015 21:18:33 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -59,6 +59,53 @@
                     </a>
                 
             
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="section1/index.html">
+            
+            <span><b>1.</b> section 1</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="section1/example1.html">
+            
+            <span><b>1.1.</b> example 1</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="section1/example2.html">
+            
+            <span><b>1.2.</b> example 2</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="section2/index.html">
+            
+            <span><b>2.</b> section 2</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="section2/example1.html">
+            
+            <span><b>2.1.</b> example 1</span>
+            
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -157,7 +204,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="./" >Communication dans les systèmes embarqués par l&#39;emploi d&#39;agents mobiles</a>
+        <a href="./" >Book Title</a>
     </h1>
 </div>
 
@@ -167,386 +214,21 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="communication-dans-les-syst%C3%A8mes-embarqu%C3%A9s-par-l-emploi-d-agents-mobiles">Communication dans les syst&#xE8;mes embarqu&#xE9;s par l&apos;emploi d&apos;agents mobiles</h1>
-<h2 id="etat-de-l-art">Etat de l&apos;art</h2>
+                        <h1 id="book-title">Book Title</h1>
 <blockquote>
-<p>Etat du document: Brouillon d&apos;un plan</p>
+<p>Book introduction here.</p>
 </blockquote>
-<h2 id="contexte">Contexte</h2>
-<p>Notre travail s&apos;inscrit dans le cadre de la <a href="http://elijah.cs.cmu.edu/" target="_blank">recherche portant sur les
-cloudlets</a>. Notre exp&#xE9;rience utilisateur des
-conteneurs nous permet de sugg&#xE9;rer une modification de l&apos;<a href="http://elijah.cs.cmu.edu/DOCS/cloudlet_hostile_MobiCASE2012_camera_ready.pdf" target="_blank">architecture
-cloudlet</a>.
-Nous pensons que les <a href="https://en.wikipedia.org/wiki/Operating-system-level_virtualization" target="_blank">conteneurs
-applicatifs</a>
-peuvent simplifier le processus de d&#xE9;chargement de code.</p>
-<p>Sc&#xE9;nario de la migration d&apos;un processus depuis un h&#xF4;te A vers un h&#xF4;te B :</p>
+<h2 id="live-demo">Live Demo</h2>
+<p><a href="http://my-user.github.io/my-repo" target="_blank">Check demo!</a></p>
+<h2 id="background">Background</h2>
+<blockquote>
+<p><a href="http://www.gitbook.io" target="_blank">gitbook</a> is used to generate github pages.</p>
+</blockquote>
+<h2 id="contributing">Contributing</h2>
 <ol>
-<li>Le conteneur applicatif encapsultant le processus &#xE0; migrer est arr&#xEA;t&#xE9;
-sur l&apos;h&#xF4;te A ;</li>
-<li>Un snapshot du conteneur est g&#xE9;n&#xE9;r&#xE9; sur l&apos;h&#xF4;te A ;</li>
-<li>Le snapshot est envoy&#xE9; vers l&apos;h&#xF4;te B depuis l&apos;h&#xF4;te A ;</li>
-<li>Le processus encapsul&#xE9; dans le conteneur est red&#xE9;marr&#xE9;.</li>
+<li>Create Issue</li>
+<li>Fork and PR</li>
 </ol>
-<p>Le terme &quot;conteneur&quot; n&apos;a pas de sens concret. Il faut l&apos;interpr&#xE9;ter comme
-l&apos;id&#xE9;e que l&apos;ex&#xE9;cution d&apos;un processus est isol&#xE9; plus ou moins fortement.</p>
-<p>Les gestionnaires de conteneurs comme Docker, LXC ou rkt combinent plusieurs
-technologies pour isoler des processus : <a href="http://linux.die.net/man/2/chroot" target="_blank">chroot</a>,
-<a href="https://www.kernel.org/doc/Documentation/cgroups/cgroups.txt" target="_blank">cgroups</a> et
-[network namspace]. La combinaison de ces technologies permet de contr&#xF4;ler
-le niveau d&apos;isolation d&apos;un processus.</p>
-<p>En 2014, un projet de sp&#xE9;cification nomm&#xE9; <a href="https://github.com/appc/spec/" target="_blank">Appc</a>
-initi&#xE9; par CoreOS. Cette sp&#xE9;cification propose un standard dans
-l&apos;impl&#xE9;mentation des gestionnaires des conteneurs. Le principale avantage
-est de permettre l&apos;int&#xE9;rop&#xE9;rabilit&#xE9; des conteneurs sur diff&#xE9;rents
-gestionnaires de conteneurs.</p>
-<p>L&apos;initiation de CoreOS a influenc&#xE9; les acteurs de l&apos;informatique a discuter
-autour d&apos;un projet de standard unique : de l&#xE0; est n&#xE9; l&apos;organisation <a href="https://www.opencontainers.org/" target="_blank">Open
-Container Initiative</a>. Elle propose une
-<a href="https://github.com/opencontainers/specs" target="_blank">sp&#xE9;cification</a> qui reprend une
-partie de la sp&#xE9;cification Appc. Une premi&#xE8;re impl&#xE9;mentation est
-disponible : <a href="https://github.com/opencontainers/runc" target="_blank">runc</a> (bas&#xE9; sur
-<a href="https://github.com/docker/libcontainer" target="_blank">libcontainer</a> do Docker).</p>
-<p>La communaut&#xE9; de d&#xE9;veloppeurs des gestionnaires de conteneurs est tr&#xE8;s
-active. C&apos;est ainsi que le projet <a href="https://github.com/coreos/rkt" target="_blank">rkt</a>
-s&apos;est rapidement d&#xE9;velopp&#xE9; sur quelques mois. </p>
-<p>Il est &#xE9;videmment possible de se passer de ces solutions. Le d&#xE9;veloppeur
-<a href="https://github.com/p8952" target="_blank">p8952</a> le prouve avec <a href="https://github.com/p8952/bocker/" target="_blank">bocker</a>
-qui se veut &#xEA;tre un Docker-like &#xE9;crit en une centaine de lignes bash.</p>
-<p>La biblioth&#xE8;que standard <a href="http://www.gnu.org/software/libc/" target="_blank">glibc</a> permet
-de r&#xE9;aliser les fonctions ensentielles d&apos;un gestionnaire de conteneurs. Le
-code ci-dessous de <a href="http://vincent.bernat.im" target="_blank">Vincent Bernat</a> montre comment 
-prototyper un clone de chroot qui exploite les espaces de noms (cgroup).</p>
-<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
-  pid_t pid;
-  <span class="hljs-keyword">int</span> ret;
-  <span class="hljs-keyword">long</span> stack_size = sysconf(_SC_PAGESIZE);
-  <span class="hljs-keyword">void</span> *<span class="hljs-built_in">stack</span> = alloca(stack_size) + stack_size;
-  <span class="hljs-comment">/* New process with its own PID/IPC/NS namespace */</span>
-  pid = clone(step2,
-              <span class="hljs-built_in">stack</span>,
-              SIGCHLD | CLONE_NEWPID | CLONE_NEWIPC |
-              CLONE_NEWNS | CLONE_FILES,
-              NULL);
-  <span class="hljs-comment">/* Wait for the child to terminate */</span>
-  <span class="hljs-keyword">while</span> (waitpid(pid, &amp;ret, <span class="hljs-number">0</span>) &lt; <span class="hljs-number">0</span> &amp;&amp; errno == EINTR)
-    <span class="hljs-keyword">continue</span>;
-  <span class="hljs-keyword">return</span> WIFEXITED(ret)?WEXITSTATUS(ret):EXIT_FAILURE;
-}
-
-<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">step2</span><span class="hljs-params">(<span class="hljs-keyword">void</span> *a)</span> </span>{
-  <span class="hljs-comment">/* Mount /proc as an example */</span>
-  mount(<span class="hljs-string">&quot;proc&quot;</span>, <span class="hljs-string">&quot;/proc&quot;</span>, <span class="hljs-string">&quot;proc&quot;</span>, <span class="hljs-number">0</span>, <span class="hljs-string">&quot;&quot;</span>);
-  <span class="hljs-comment">/* Chroot */</span>
-  chroot(<span class="hljs-string">&quot;/srv/debian&quot;</span>);
-  chdir(<span class="hljs-string">&quot;/&quot;</span>);
-  <span class="hljs-comment">/* Drop privileges */</span>
-  setgid(<span class="hljs-number">1000</span>);
-  setgroups(<span class="hljs-number">0</span>, NULL);
-  setuid(<span class="hljs-number">1000</span>);
-  <span class="hljs-comment">/* Exec shell */</span>
-  execl(<span class="hljs-string">&quot;/bin/bash&quot;</span>, <span class="hljs-string">&quot;/bin/bash&quot;</span>, NULL);
-}
-</code></pre>
-<h2 id="plan">Plan</h2>
-<p>Pour faire l&apos;&#xE9;tat de l&apos;art de notre sujet de recherche, nous orientons
-naturellement vers les papiers sur les cloudlets et sur les outils
-mettant en oeuvre l&apos;isolation par conteneur.</p>
-<ul>
-<li><a href="http://elijah.cs.cmu.edu/" target="_blank">Papiers cloudlets</a></li>
-<li>Gestion de flottes de conteneurs<ul>
-<li><a href="https://coreos.com/fleet/docs/latest/" target="_blank">fleet</a> (de CoreOS)</li>
-<li><a href="http://kubernetes.io/" target="_blank">Kubernetes</a> (de Google)</li>
-<li><a href="http://lattice.cf/" target="_blank">Lattice</a> (de Pivotal Software)</li>
-</ul>
-</li>
-<li>OS de conteneurs<ul>
-<li><a href="https://coreos.com/" target="_blank">CoreOS</a></li>
-<li><a href="https://vmware.github.io/photon/" target="_blank">Photon</a> (de VMware)</li>
-<li><a href="https://clearlinux.org/" target="_blank">ClearLinux</a> (de Intel)</li>
-<li><a href="http://developer.ubuntu.com/en/snappy/" target="_blank">Snappy</a> (de Canonical)</li>
-</ul>
-</li>
-<li>Cloud de conteneurs<ul>
-<li><a href="https://quay.io" target="_blank">quay.io</a> (de CoreOS)</li>
-<li>Docker private hub</li>
-<li><a href="http://www.odin.com/products/virtuozzo/" target="_blank">Virtuozoo</a> (de Odin) </li>
-</ul>
-</li>
-<li>Gestionnaire de conteneurs<ul>
-<li><a href="https://linuxcontainers.org/lxc/" target="_blank">LXC</a> (de Canonical)</li>
-<li><a href="https://github.com/docker/docker/" target="_blank">Docker</a> (de Docker)</li>
-<li><a href="http://www.freedesktop.org/software/systemd/man/systemd-nspawn.html" target="_blank">systemd-nspawn</a></li>
-<li><a href="https://openvz.org/Main_Page" target="_blank">openvz</a> (de Odin)</li>
-<li><a href="https://github.com/coreos/rkt" target="_blank">rkt</a> (de CoreOS)</li>
-<li><a href="https://github.com/opencontainers/runc" target="_blank">runc</a></li>
-<li><a href="https://github.com/docker/libcontainer" target="_blank">libcontainer</a> (de Docker)</li>
-</ul>
-</li>
-<li>Isolation l&#xE9;g&#xE8;re<ul>
-<li><a href="https://github.com/p8952/bocker" target="_blank">bocker</a></li>
-<li><a href="http://proot.me/" target="_blank">proot</a></li>
-<li><a href="http://vincent.bernat.im/en/blog/2011-jchroot-isolation.html" target="_blank">jchroot</a></li>
-<li><a href="https://github.com/Spiritdude/ChrootX" target="_blank">chrootx</a></li>
-<li><a href="http://busybox.net/" target="_blank">busybox</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="figures">Figures</h2>
-<h3 id="architecture-cloudlet-simplifi%C3%A9e">Architecture cloudlet simplifi&#xE9;e</h3>
-<p><img src="http://imgh.us/cloudlet-intro.svg" alt="Architecture cloudlet simplifi&#xE9;e"></p>
-<h3 id="prototype-d-un-chroot-pour-android">Prototype d&apos;un chroot pour Android</h3>
-<pre><code class="lang-c"><span class="hljs-comment">/*
- * main.c
- *
- *  Created on: Jul 23, 2015
- *      Author: steven
- */</span>
-
-<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> _GNU_SOURCE</span>
-<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> _DEFAULT_SOURCE</span>
-
-<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;ctype.h&gt;</span>
-<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;errno.h&gt;</span>
-<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;sched.h&gt;</span>
-<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;stdio.h&gt;</span>
-<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;stdlib.h&gt;</span>
-<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;string.h&gt;</span>
-<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;sys/mount.h&gt;</span>
-<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;sys/stat.h&gt;</span>
-<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;sys/syscall.h&gt;</span>
-<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;sys/wait.h&gt;</span>
-<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;unistd.h&gt;</span>
-
-<span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> exit_err;
-<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> exit_if(_cond, _fmt, _args...) \</span>
-    <span class="hljs-keyword">if</span>(_cond) { \
-        <span class="hljs-built_in">fprintf</span>(stderr, <span class="hljs-string">&quot;Error: &quot;</span> _fmt <span class="hljs-string">&quot;\n&quot;</span>, <span class="hljs-preprocessor">##_args); \</span>
-        <span class="hljs-built_in">exit</span>(exit_err); \
-    }
-<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> pexit_if(_cond, _fmt, _args...) \</span>
-    exit_if(_cond, _fmt <span class="hljs-string">&quot;: %s&quot;</span>, <span class="hljs-preprocessor">##_args, strerror(errno))</span>
-<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> warn_if(_cond, _fmt, _args...) \</span>
-    <span class="hljs-keyword">if</span>(_cond) { \
-        <span class="hljs-built_in">fprintf</span>(stderr, <span class="hljs-string">&quot;Warning: &quot;</span> _fmt <span class="hljs-string">&quot;\n&quot;</span>, <span class="hljs-preprocessor">##_args); \</span>
-    }
-<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> pwarn_if(_cond, _fmt, _args...) \</span>
-    warn_if(_cond, _fmt <span class="hljs-string">&quot;: %s&quot;</span>, <span class="hljs-preprocessor">##_args, strerror(errno))</span>
-
-<span class="hljs-keyword">static</span> <span class="hljs-keyword">char</span> mnt_path[<span class="hljs-number">256</span>];
-<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> mount_to(_from, _to, _fstype, _rwflag) \</span>
-    <span class="hljs-built_in">fprintf</span>(stdout, <span class="hljs-string">&quot;mount(%s, %s, %s, %d, NULL)\n&quot;</span>, \
-            _from, _to, _fstype, _rwflag); \
-    pexit_if(mount(_from, _to, _fstype, _rwflag, NULL) == -<span class="hljs-number">1</span>, \
-            <span class="hljs-string">&quot;Failed to mount %s (%s) into %s&quot;</span>, _from, _fstype, _to)
-<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> mount_into(_from, _into, _fstype, _rwflag) \</span>
-    <span class="hljs-built_in">snprintf</span>(mnt_path, <span class="hljs-keyword">sizeof</span>(mnt_path), <span class="hljs-string">&quot;%s%s&quot;</span>, _into, _from); \
-    mount_to(_from, mnt_path, _fstype, _rwflag)
-<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> mount_cg(_name, _into) \</span>
-    <span class="hljs-built_in">snprintf</span>(mnt_path, <span class="hljs-keyword">sizeof</span>(mnt_path), \
-            <span class="hljs-string">&quot;%s/sys/fs/cgroup/%s&quot;</span>, _into, _name); \
-    mkdir(mnt_path, <span class="hljs-number">0700</span>); \
-    <span class="hljs-built_in">fprintf</span>(stdout, <span class="hljs-string">&quot;mount(cgroup, %s, cgroup, 0, %s)\n&quot;</span>, \
-                mnt_path, _name); \
-    pwarn_if(mount(<span class="hljs-string">&quot;cgroup&quot;</span>, mnt_path, <span class="hljs-string">&quot;cgroup&quot;</span>, NULL, _name) == -<span class="hljs-number">1</span>,\
-                <span class="hljs-string">&quot;Failed to mount %s into %s&quot;</span>, _name, mnt_path)
-
-<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *PROGNAME;
-<span class="hljs-keyword">char</span> *<span class="hljs-keyword">const</span> DEF_CHCMD = <span class="hljs-string">&quot;/bin/bash&quot;</span>;
-<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> DEF_GID = <span class="hljs-number">0</span>;
-<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> DEF_UID = <span class="hljs-number">0</span>;
-<span class="hljs-keyword">char</span> *DEF_ENV[] = {
-        <span class="hljs-string">&quot;HOME=/root&quot;</span>,
-        <span class="hljs-string">&quot;PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin&quot;</span>,
-        <span class="hljs-string">&quot;SHELL=/bin/bash&quot;</span>,
-        <span class="hljs-string">&quot;TERM=xterm&quot;</span>,
-        NULL
-    };
-
-<span class="hljs-keyword">struct</span> config {
-    <span class="hljs-keyword">char</span> *path;
-    <span class="hljs-keyword">char</span> *cmd;
-    <span class="hljs-keyword">int</span> argc;
-    <span class="hljs-keyword">char</span> **argv;
-    <span class="hljs-keyword">char</span> **env;
-};
-
-<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print_config</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> config conf)</span>
-</span>{
-    <span class="hljs-keyword">int</span> i;
-
-    <span class="hljs-built_in">fprintf</span>(stdout, <span class="hljs-string">&quot;--- DEBUG ---\n&quot;</span>);
-    <span class="hljs-built_in">fprintf</span>(stdout, <span class="hljs-string">&quot;config.path = %s\n&quot;</span>, conf.path);
-    <span class="hljs-built_in">fprintf</span>(stdout, <span class="hljs-string">&quot;config.cmd = %s\n&quot;</span>, conf.cmd);
-    <span class="hljs-built_in">fprintf</span>(stdout, <span class="hljs-string">&quot;config.argc = %d\n&quot;</span>, conf.argc);
-    <span class="hljs-keyword">for</span> (i=<span class="hljs-number">0</span>; i &lt; conf.argc &amp;&amp; <span class="hljs-built_in">fprintf</span>(stdout, <span class="hljs-string">&quot;config.argv[%d] = %s\n&quot;</span>, i, conf.argv[i]); ++i);
-    <span class="hljs-built_in">fprintf</span>(stdout, <span class="hljs-string">&quot;--- DEBUG ---\n&quot;</span>);
-}
-
-<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">usage</span><span class="hljs-params">(<span class="hljs-keyword">int</span> retcode)</span>
-</span>{
-    <span class="hljs-built_in">fprintf</span>(
-        retcode == EXIT_SUCCESS ? stdout : stderr,
-        <span class="hljs-string">&quot;Usage: %s NEWROOT [COMMAND [ARG]...]\n&quot;</span>,
-        PROGNAME
-    );
-    <span class="hljs-keyword">return</span> retcode;
-}
-
-<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">mount_chroot</span><span class="hljs-params">(<span class="hljs-keyword">char</span> *path)</span>
-</span>{
-    mount_to(<span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;/&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, MS_PRIVATE|MS_REC);
-    mount_to(<span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;/data&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, MS_REMOUNT&amp;~MS_NODEV);
-    mount_to(path, path, <span class="hljs-string">&quot;bind&quot;</span>, MS_BIND|MS_REC);
-    mount_into(<span class="hljs-string">&quot;/dev&quot;</span>, path, <span class="hljs-string">&quot;tmpfs&quot;</span>, MS_BIND);
-    mount_into(<span class="hljs-string">&quot;/dev/pts&quot;</span>, path, <span class="hljs-string">&quot;devpts&quot;</span>, <span class="hljs-number">0</span>);
-    mount_into(<span class="hljs-string">&quot;/proc&quot;</span>, path, <span class="hljs-string">&quot;proc&quot;</span>, <span class="hljs-number">0</span>);
-    mount_into(<span class="hljs-string">&quot;/sys&quot;</span>, path, <span class="hljs-string">&quot;sysfs&quot;</span>, <span class="hljs-number">0</span>);
-    mount_into(<span class="hljs-string">&quot;/sys/fs/cgroup&quot;</span>, path, <span class="hljs-string">&quot;cgroup&quot;</span>, MS_BIND);
-    mount_into(<span class="hljs-string">&quot;/system&quot;</span>, path, <span class="hljs-string">&quot;none&quot;</span>, MS_BIND|MS_REC)
-
-    <span class="hljs-keyword">return</span> EXIT_SUCCESS;
-}
-
-<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">mount_cgroups</span><span class="hljs-params">(<span class="hljs-keyword">char</span> *path)</span>
-</span>{
-    <span class="hljs-keyword">char</span> *line = NULL;
-    size_t siz = <span class="hljs-number">0</span>;
-    <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;
-    <span class="hljs-keyword">char</span> buffer[<span class="hljs-number">64</span>];
-    <span class="hljs-keyword">int</span> pos = <span class="hljs-number">0</span>;
-
-    FILE *fp = fopen(<span class="hljs-string">&quot;/proc/cgroups&quot;</span>, <span class="hljs-string">&quot;r&quot;</span>);
-    <span class="hljs-keyword">while</span>(getline(&amp;line, &amp;siz, fp) != -<span class="hljs-number">1</span>)
-    {
-        <span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span>; i &lt; siz &amp;&amp; !<span class="hljs-built_in">isspace</span>(line[i]); i++)
-        {
-            buffer[pos++] = line[i];
-        }
-
-        <span class="hljs-keyword">if</span> (buffer[<span class="hljs-number">0</span>] != <span class="hljs-string">&apos;#&apos;</span>)
-        {
-            mount_cg(buffer, path);
-        }
-
-        pos = <span class="hljs-number">0</span>;
-        <span class="hljs-built_in">memset</span>(buffer, <span class="hljs-number">0</span>, <span class="hljs-number">64</span>);
-    }
-
-    <span class="hljs-keyword">return</span> EXIT_SUCCESS;
-}
-
-<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">process_chroot</span><span class="hljs-params">(<span class="hljs-keyword">void</span> *a)</span>
-</span>{
-    <span class="hljs-keyword">struct</span> config *conf = (<span class="hljs-keyword">struct</span> config*)a;
-    <span class="hljs-keyword">char</span> *<span class="hljs-keyword">template</span> = NULL;
-
-    <span class="hljs-comment">// mount file systems</span>
-    mount_chroot(conf-&gt;path);
-
-    <span class="hljs-comment">// mount cgroups</span>
-    mount_cgroups(conf-&gt;path);
-
-    <span class="hljs-comment">// chroot NEWROOT</span>
-    pexit_if(chroot(conf-&gt;path) == -<span class="hljs-number">1</span>,
-            <span class="hljs-string">&quot;Failed to chroot into %s&quot;</span>, conf-&gt;path);
-    <span class="hljs-comment">// cd /</span>
-    pexit_if(chdir(<span class="hljs-string">&quot;/&quot;</span>) == -<span class="hljs-number">1</span>,
-            <span class="hljs-string">&quot;Failed to chdir to /&quot;</span>);
-
-    <span class="hljs-comment">// setgid(0)</span>
-    pwarn_if(setgid(DEF_GID) == -<span class="hljs-number">1</span>,
-            <span class="hljs-string">&quot;Failed to setgid with %d&quot;</span>, DEF_GID);
-
-    <span class="hljs-comment">// setgroups(0, NULL)</span>
-    pwarn_if(setgroups(<span class="hljs-number">0</span>, NULL) == -<span class="hljs-number">1</span>,
-            <span class="hljs-string">&quot;Failed to setgroups with %d&quot;</span>, <span class="hljs-number">0</span>);
-
-    <span class="hljs-comment">// setuid(0)</span>
-    pwarn_if(setuid(DEF_UID) == -<span class="hljs-number">1</span>,
-            <span class="hljs-string">&quot;Failed to setuid with %d&quot;</span>, DEF_UID);
-
-    <span class="hljs-comment">// ENV COMMAND [ARGS...]</span>
-    pexit_if(execve(conf-&gt;cmd, conf-&gt;argv, conf-&gt;env) == -<span class="hljs-number">1</span>,
-            <span class="hljs-string">&quot;Failed to execute %s&quot;</span>, conf-&gt;cmd);
-
-    <span class="hljs-keyword">return</span> EXIT_SUCCESS;
-}
-
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span> *argv[])</span>
-</span>{
-    <span class="hljs-keyword">struct</span> config conf;
-    <span class="hljs-built_in">memset</span>(&amp;conf, <span class="hljs-number">0</span>, <span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> config));
-
-    PROGNAME = argv[<span class="hljs-number">0</span>];
-
-    <span class="hljs-comment">// if there is only the program name in argv[0]</span>
-    <span class="hljs-keyword">if</span> (argc &lt; <span class="hljs-number">2</span>)
-    {
-        <span class="hljs-keyword">return</span> usage(EXIT_FAILURE);
-    }
-
-    <span class="hljs-comment">// NEWROOT in argv[1]</span>
-    <span class="hljs-keyword">int</span> pathlen = <span class="hljs-built_in">strlen</span>(argv[<span class="hljs-number">1</span>]);
-    <span class="hljs-keyword">char</span> *lastchar = &amp;argv[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]+pathlen-<span class="hljs-number">1</span>;
-    <span class="hljs-keyword">if</span> (*lastchar == <span class="hljs-string">&apos;/&apos;</span>)
-    {
-        conf.path = <span class="hljs-built_in">malloc</span>(pathlen);
-        <span class="hljs-built_in">strncpy</span>(conf.path, argv[<span class="hljs-number">1</span>], pathlen-<span class="hljs-number">1</span>);
-    } <span class="hljs-keyword">else</span> {
-        conf.path = <span class="hljs-built_in">malloc</span>(pathlen+<span class="hljs-number">1</span>);
-        <span class="hljs-built_in">strcpy</span>(conf.path, argv[<span class="hljs-number">1</span>]);
-    }
-    conf.path[pathlen+<span class="hljs-number">1</span>] = <span class="hljs-string">&apos;\0&apos;</span>;
-
-    <span class="hljs-comment">// COMMAND in argv[2]</span>
-    conf.cmd = argc &gt; <span class="hljs-number">2</span> ? argv[<span class="hljs-number">2</span>] : DEF_CHCMD;
-
-    <span class="hljs-comment">// config.argc = argc - (PROGNAME + NEWROOT)</span>
-    conf.argc = argc-<span class="hljs-number">2</span> &gt; <span class="hljs-number">0</span> ? argc-<span class="hljs-number">2</span> : <span class="hljs-number">0</span>;
-
-    <span class="hljs-comment">// config.argv must stores COMMAND in key 0 and NULL in last key</span>
-    conf.argv = <span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">char</span>*)*(conf.argc+<span class="hljs-number">1</span>));
-    conf.argv[<span class="hljs-number">0</span>] = <span class="hljs-built_in">malloc</span>(<span class="hljs-built_in">strlen</span>(conf.cmd)+<span class="hljs-number">1</span>);
-    <span class="hljs-built_in">strcpy</span>(conf.argv[<span class="hljs-number">0</span>], conf.cmd); <span class="hljs-comment">// set COMMAND into config.argv[0]</span>
-    conf.argv[conf.argc] = NULL;    <span class="hljs-comment">// set NULL into config.argv last key</span>
-
-    <span class="hljs-keyword">if</span> (conf.argc &gt; <span class="hljs-number">0</span>)
-    {
-        <span class="hljs-keyword">int</span> i = <span class="hljs-number">3</span>; <span class="hljs-comment">// there are 3 arguments that we want to ignore</span>
-        argv += i; <span class="hljs-comment">// PROGNAME (argv[0]), NEWROOT (argv[1]) and COMMAND (argv[2])</span>
-        <span class="hljs-keyword">for</span> (; i&lt;argc; ++i, ++argv) <span class="hljs-comment">// copy the rest into config.argv</span>
-        {
-            conf.argv[i-<span class="hljs-number">2</span>] = <span class="hljs-built_in">malloc</span>(<span class="hljs-built_in">strlen</span>(*argv)+<span class="hljs-number">1</span>);
-            <span class="hljs-built_in">strcpy</span>(conf.argv[i-<span class="hljs-number">2</span>], *argv);
-        }
-        conf.argv[i-<span class="hljs-number">2</span>] = NULL;
-    }
-
-    <span class="hljs-comment">// config.env</span>
-    conf.env = DEF_ENV;
-
-    print_config(conf);
-
-    pid_t pid;
-    <span class="hljs-keyword">int</span> ret;
-    <span class="hljs-keyword">long</span> stack_size = sysconf(_SC_PAGESIZE);
-    <span class="hljs-keyword">void</span> *<span class="hljs-built_in">stack</span> = alloca(stack_size) + stack_size;
-
-    pid = clone(
-        process_chroot,
-        <span class="hljs-built_in">stack</span>,
-        SIGCHLD|CLONE_NEWPID|CLONE_NEWIPC|CLONE_NEWNS|CLONE_FILES,
-        (<span class="hljs-keyword">void</span>*)&amp;conf
-    );
-
-    pexit_if(pid &lt; <span class="hljs-number">0</span>, <span class="hljs-string">&quot;Failed to clone&quot;</span>);
-
-    <span class="hljs-keyword">while</span> (waitpid(pid, &amp;ret, <span class="hljs-number">0</span>) &lt; <span class="hljs-number">0</span> &amp;&amp; errno == EINTR);
-
-    <span class="hljs-keyword">return</span> WIFEXITED(ret) ? WEXITSTATUS(ret) : EXIT_FAILURE;
-}
-</code></pre>
 
                     
                     </section>
