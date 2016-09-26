@@ -5,6 +5,7 @@ var gulp = require('gulp');
  
 // Task
 gulp.task('default', function() {
+
     /*
 	// configure nodemon
 	nodemon({
@@ -18,4 +19,5 @@ gulp.task('default', function() {
 			.pipe(notify('Reloading page, please wait...'));
 	})
 	*/
+	
 })
