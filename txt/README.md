@@ -1,22 +1,17 @@
 ## GitBook
 
-##  ¿Qué es?
+###  ¿Qué es?
 
 Gitbook es una herramienta que permite crear libros y
 documentos utilizando sintaxis Markdown o AsciiDoc. Estos
 libros una vez creados, pueden ser visualizados en web, o
 pueden ser exportados como e-book o pdf.
 
+Tiene una plataforma web donde una vez identificados se puede publicar 
+libros de forma gratuita.
 
-Aparte, esta herramienta ofrece una especie de plataforma
-web que, tras identificarnos nos permite publicar los
-libros de forma gratuita para que cualquier persona pueda
-visualizarlo. Esta característica nos ofrece funciones
-adicionales como la posibilidad de escribir comentarios en
-los párrafos del libro a cualquier persona previamente
-registrada y que así lo desee.
 
-## Utilización
+### Utilización
 
 ***1. Creación de una cuenta en Gitbook***
 
@@ -65,7 +60,19 @@ Se trata de una herramienta de Git hub que permite desplegar tu página web de m
   
   
 ##Despliegue en Gitbook  
-  
+  GitBook está implementando usando node.js, podemos instalarlo usando NPM:
+
+```$ npm install gitbook -g```
+
+Podemos servir un libro directamente desde un repositorio con este comando:
+
+```$ gitbook serve ./repository```
+
+Los documentos se pueden exportar como sitio web independiente incluyendo ejemplos interactivos que pueden ser alojados directamente desde GitHub Pages, 
+PDF con la solución de los ejercicios al final del libro, ebook utilizando además un conversor, formato Single Page o JSON 
+para extraer metadatos del documento.
+
+Cuenta con un editor de forma experimental para Windows, Mac y Linux que facilita la escritura en GitBook.
   
   
   
@@ -76,7 +83,9 @@ Node es un intérprete Javascript del lado del servidor que cambia la noción de
 
 ### npm
 Es el manejdor por defecto para Node.js, un entorno de ejecucion para JavaScript. Se ejecuta desde la linea de comandos y maneja las dependencias para una aplicación, es el equivalente a gemspec de ruby.
-Ademas permite a los usuarios instalar aplicaciones Node.js que se encuentran en el repositorio.
+Ademas permite a los usuarios instalar aplicaciones Node.js que se encuentran en el repositorio. La sintaxis para instalar un modulo es:
+
+```$ npm install <Module Name> ```
 
 ### Package.json
 
@@ -87,5 +96,5 @@ Es una herramienta que permite automatizar tareas comunes de desarrollo
     .Se suele utilizar para tareas de front-end como recargar la página
     ,optimizar activos como CSS, JavaScript,las imágenes y un sin fin de demás 
     tareas
-    ![hola](../img/gulp.png)
+    ![gulp](../img/gulp.png)
     
