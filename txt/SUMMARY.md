@@ -7,7 +7,7 @@ This is the summary of my book.
     * [Utilización](section1/example2.md)
     * [package.json](section2/example3.md)
 
-* [Gh-pages](section2/README.md)
+* [Gh-pages](#gh-pages)
     * [¿Qué son?](section2/example1.md)
     * [Como se utilizan](section2/example2.md)
     
