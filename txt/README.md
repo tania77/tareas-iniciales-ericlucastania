@@ -89,12 +89,14 @@ Ademas permite a los usuarios instalar aplicaciones Node.js que se encuentran en
 
 ### Package.json
 
+This document is all you need to know about what's required in your package.json file. It must be actual JSON, not just a JavaScript object literal.
+A lot of the behavior described in this document is affected by the config settings described in npm-config.
+
 ### Express
 
 ## ¿Qué es Gulp?
-Es una herramienta que permite automatizar tareas comunes de desarrollo
-    .Se suele utilizar para tareas de front-end como recargar la página
-    ,optimizar activos como CSS, JavaScript,las imágenes y un sin fin de demás 
-    tareas
-    ![gulp](../img/gulp.png)
+Es una herramienta que permite automatizar tareas comunes de desarrollo.Se suele utilizar para tareas de front-end como recargar la página
+,optimizar activos como CSS, JavaScript,las imágenes y un sin fin de demás tareas
+
+![gulp](images/gulp.png)
     

@@ -1,23 +1,16 @@
 // Dependencies
 var gulp = require('gulp');
-//var nodemon = require('gulp-nodemon');
+var run = require('gulp-run');
 
- 
-// Task
-gulp.task('default', function() {
+/*
+gulp.task('build', function(){
+  return gulp.src(['scripts/*'])
+    .pipe(run('npm run build'));
+    //.pipe(gulp.dest('./dist'))
+    //.pipe(connect.reload());
 
-    /*
-	// configure nodemon
-	nodemon({
-		// the script to run the app
-		script: 'app.js',
-		ext: 'js'
-	}).on('restart', function(){
-		// when the app has restarted, run livereload.
-		gulp.src('app.js')
-			.pipe(livereload())
-			.pipe(notify('Reloading page, please wait...'));
-	})
-	*/
-	
+});
+*/
+gulp.task('depl', function() {
+  return run('npm run deploy').exec();    // ahorrando time
 })
