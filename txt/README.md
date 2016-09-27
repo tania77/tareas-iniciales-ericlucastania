@@ -1,8 +1,8 @@
-## GitBook
+## 1. GitBook
 
 ###  ¿Qué es?
 
-Gitbook es una herramienta que permite crear libros y
+Gitbook es una herramienta que nos permite crear libros y
 documentos utilizando sintaxis Markdown o AsciiDoc. Estos
 libros una vez creados, pueden ser visualizados en web, o
 pueden ser exportados como e-book o pdf.
@@ -29,7 +29,7 @@ contenido con Github o dejarlo en Gitbook.
 
 
 
-## Package.json
+### Package.json
 
 
 En este archivo, que debe estar en la raíz del proyecto, va a quedar reflejada la configuración del proyecto de Node tales como el nombre,el autor,las dependencias del 
@@ -38,7 +38,7 @@ encuentren en el package.json son las que se instalaran una vez ejecutado
 el comando: ```npm install```
 
 
-## Gh-Pages
+## 2. Gh-Pages
 ### ¿Qué son?
 Se trata de una herramienta de Git hub que permite desplegar tu página web de manera sencilla. Simplemente creando una rama llamada "gh-pages" y empujando los archivos a ella.
 ### ¿Cómo se utilizan?
@@ -59,7 +59,7 @@ Se trata de una herramienta de Git hub que permite desplegar tu página web de m
   
   
   
-##Despliegue en Gitbook  
+## 3. Despliegue en Gitbook  
   GitBook está implementando usando node.js, podemos instalarlo usando NPM:
 
 ```$ npm install gitbook -g```
@@ -89,14 +89,18 @@ Ademas permite a los usuarios instalar aplicaciones Node.js que se encuentran en
 
 ### Package.json
 
-This document is all you need to know about what's required in your package.json file. It must be actual JSON, not just a JavaScript object literal.
-A lot of the behavior described in this document is affected by the config settings described in npm-config.
+Este documento es todo lo que necesitas saber acerca de lo que requiere tu proyecto. Está escrito en JSON, no es un objeto 
+literal de javascript. Todo lo que se describe en este documento afecta a la configuración del proyecto.
+
 
 ### Express
+
+Express es una infraestructura de aplicaciones web Node.js mínima y 
+flexible que proporciona un conjunto sólido de características para las aplicaciones web y móviles.
 
 ## ¿Qué es Gulp?
 Es una herramienta que permite automatizar tareas comunes de desarrollo.Se suele utilizar para tareas de front-end como recargar la página
 ,optimizar activos como CSS, JavaScript,las imágenes y un sin fin de demás tareas
 
-![gulp](images/gulp.png)
+
     
