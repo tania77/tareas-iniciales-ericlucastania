@@ -1,5 +1,5 @@
 
-<!--sec data-title="Gitbook" data-id="section0" data-show=false ces-->
+<!--sec data-title="#### primary::1. Gitbook" data-id="section0" data-collapse=true ces-->
 
 ## 1. GitBook
 
@@ -45,7 +45,9 @@ el comando: ```npm install```
 
 
 
-## 2. Gh-Pages
+<!--sec data-title="2. Gh-Pages" data-id="section1" data-collapse=true ces-->
+
+##  2. Gh-Pages
 ### ¿Qué son?
 Se trata de una herramienta de Git hub que permite desplegar tu página web de manera sencilla. Simplemente creando una rama llamada "gh-pages" y empujando los archivos a ella.
 ### ¿Cómo se utilizan?
@@ -65,7 +67,10 @@ Se trata de una herramienta de Git hub que permite desplegar tu página web de m
     Si escribimos en un navegador la dirección *http://nombredeusuario.github.io/repositorio* tendremos la pagina web de nuestro proyecto.
   
   
-  
+<!--endsec-->
+
+<!--sec data-title="3. Despliegue en Gitbook" data-id="section2" data-collapse=true ces-->
+
 ## 3. Despliegue en Gitbook  
   GitBook está implementando usando node.js, podemos instalarlo usando NPM:
 
@@ -82,9 +87,10 @@ para extraer metadatos del documento.
 Cuenta con un editor de forma experimental para Windows, Mac y Linux que facilita la escritura en GitBook.
   
   
-  
-    
-## NodeJS
+<!--endsec-->
+
+<!--sec data-title="4. NodeJS" data-id="section3" data-collapse=true ces-->
+## 4. NodeJS
 ### ¿Qué es?
 Node es un intérprete Javascript del lado del servidor que cambia la noción de cómo debería trabajar un servidor. Su meta es permitir a un programador construir aplicaciones altamente escalables y escribir código que maneje decenas de miles de conexiones simultáneas en una sólo una máquina física.
 
@@ -105,9 +111,12 @@ literal de javascript. Todo lo que se describe en este documento afecta a la con
 Express es una infraestructura de aplicaciones web Node.js mínima y 
 flexible que proporciona un conjunto sólido de características para las aplicaciones web y móviles.
 
+<!--endsec-->
+
+<!--sec data-title="5. Gulp" data-id="section4" data-collapse=true ces-->
 ## ¿Qué es Gulp?
 Es una herramienta que permite automatizar tareas comunes de desarrollo.Se suele utilizar para tareas de front-end como recargar la página
 ,optimizar activos como CSS, JavaScript,las imágenes y un sin fin de demás tareas
 
-
+<!--endsec-->
     

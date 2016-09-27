@@ -1,5 +1,5 @@
 
 {
   "gitbook": ">=3.0.0",
-  "plugins": ["youtube" , "sectionx"]
+  "plugins": ["youtube" , "sectionx","bootstrap-callout"]
 }
