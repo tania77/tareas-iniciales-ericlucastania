@@ -1,3 +1,6 @@
+
+<!--sec data-title="Gitbook" data-id="section0" data-show=false ces-->
+
 ## 1. GitBook
 
 ###  ¿Qué es?
@@ -5,7 +8,7 @@
 Gitbook es una herramienta que nos permite crear libros y
 documentos utilizando sintaxis Markdown o AsciiDoc. Estos
 libros una vez creados, pueden ser visualizados en web, o
-pueden ser exportados como e-book o pdf.
+pueden ser exportados como e-book o pdf. {%youtube%} https://www.youtube.com/watch?v=9bZkp7q19f0 {%endyoutube%}
 
 Tiene una plataforma web donde una vez identificados se puede publicar 
 libros de forma gratuita.
@@ -36,6 +39,10 @@ En este archivo, que debe estar en la raíz del proyecto, va a quedar reflejada 
 proyecto que necesita el proyecto para funcionar.Las dependencias que se 
 encuentren en el package.json son las que se instalaran una vez ejecutado
 el comando: ```npm install```
+
+
+<!--endsec-->
+
 
 
 ## 2. Gh-Pages
