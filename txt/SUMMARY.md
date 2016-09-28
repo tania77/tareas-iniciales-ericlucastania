@@ -2,23 +2,30 @@
 
 This is the summary of my book.
 
-* [GitBook](section1/example1.md)
-    * [¿Qué es?](section1/example1.md)
-    * [Utilización](section1/example2.md)
-    * [package.json](section1/example3.md)
-
-* [Gh-pages](section2/example1.md)
-    * [¿Qué son?](section2/example1.md)
-    * [Como se utilizan](section2/example2.md)
+* [GitBook](sections/section1/example1.md)
+    * [¿Qué es?](sections/section1/example1.md)
+    * [Utilización](sections/section1/example2.md)
+    * [Markdown](sections/section1/example4.md)
     
-* [Despliegue en Gitbook](section3/README.md)
-    * [Elaboración y distintas salidas](section3/example1.md)
+* [Github Desktop](sections/section6/exmple1.md)
+    * [Instalación](sections/section6/exmple1.md)
+    
 
-* [NodeJS](section4/example1.md)
-    * [¿Qué es?](section4/example1.md)    
-    * [npm](section4/example2.md)
-    * [package.json](section4/packagejson)
-    * [express](section4/example4.md)
+* [Gh-pages](sections/section2/example1.md)
+    * [¿Qué son?](sections/section2/example1.md)
+    * [Como se utilizan](sections/section2/example2.md)
+    
+* [Despliegue en Gitbook](sections/section3/README.md)
+    * [Elaboración y distintas salidas](sections/section3/example1.md)
 
-* [Gulpfile](section5/example1.md)
-   * [¿Qué es?](section5/example1.md)
+* [NodeJS](sections/section4/example1.md)
+    * [¿Qué es?](sections/section4/example1.md)
+        * [Instalacion](sections/section4/example5.md)
+    * [Comprobación npm](sections/section4/example2.md)
+    * [Package.json](sections/section4/packagejson)
+    * [Express](sections/section4/example4.md)
+        *[Instalación Express](sections/section4/example4.md)
+    
+
+* [Gulpfile](sections/section5/example1.md)
+   * [¿Qué es?](sections/section5/example1.md)
