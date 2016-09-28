@@ -447,19 +447,24 @@ la creaci&#xF3;n o asociarla con Github o alguna otra plataforma. Es interesante
 asociarla con Github para documentar proyectos ya que tendr&#xE1;s acceso a los
 distintos repositorios de tu cuenta. Pudiendo documentar as&#xED; el que m&#xE1;s te pueda interesar.</p><p><strong><em>2. Creaci&#xF3;n de un libro</em></strong></p><p>Una vez dentro de la p&#xE1;gina tendremos la opci&#xF3;n de crear nuestra documentaci&#xF3;n
 para ello tendremos que elegir un t&#xED;tulo y un modo. Que podr&#xE1; ser enlazando el
-contenido con Github o dejarlo en Gitbook.</p><h3 id="markdown">Markdown</h3><h1 id="encabezado-h1">Encabezado h1</h1><h2 id="encabezado-h2">Encabezado h2</h2><h3 id="encabezado-h3">Encabezado h3</h3><h4 id="encabezado-h4">Encabezado h4</h4><h5 id="encabezado-h5">Encabezado h5</h5><h6 id="encabezado-h6">Encabezado h6</h6><p>Citas: Para citar solo es necesario escribir una cu&#xF1;a antes del texto
-   La vida es muy corta para aprender Alem&#xE1;n. -Tad Marburg
-   Texto con &#xE9;nfasis: Agregar un asterisco para cursiva y dos para negrita</p><pre><code>*&#xE9;nfasis* (cursiva)
-
-**&#xE9;nfasis fuerte** (negrita)</code></pre><p>C&#xF3;digo: Se utiliza el acento grave para identificar c&#xF3;digo</p><p><code>C&#xF3;digo</code></p><pre><code>    C&#xF3;digo en
-    varias l&#xED;neas</code></pre><p>Listas:</p><ul><li><p>Un elemento en una lista no ordenada</p><ul><li>Otro elemento en una lista
-</li>
-<li>Elemento en una lista enumerada u ordenada.
-</li>
-<li>Otro elemento
-Enlaces:
-</li></ul>
-<p><a title="T&#xED;tulo del enlace" href="URL">Texto del enlace aqu&#xED;</a></p></li></ul></div></div><hr><div class="callout callout-warning"><h4 id="2-github-desktop">2. Github Desktop</h4><div><h3 id="instalaci&#xF3;n">Instalaci&#xF3;n</h3><p>Para instalar Github APP en windows se ha accedido a la <a href="https://desktop.github.com/" target="_blank">p&#xE1;gina oficial </a> e se instal&#xF3; la version de desktop que nos permite trabajar con una interfaz
+contenido con Github o dejarlo en Gitbook.</p><h3 id="markdown">Markdown</h3><p>Para el desarrollo de este documento se ha utilizado Markdown. Aqu&#xED; las multiples opciones que ofrece este lenguaje.</p><pre><code># Encabezado h1
+## Encabezado h2
+### Encabezado h3
+#### Encabezado h4
+##### Encabezado h5
+###### Encabezado h6
+Citas: Para citar solo es necesario escribir una cu&#xF1;a antes del texto</code></pre><p>La vida es muy corta para aprender Alem&#xE1;n. -Tad Marburg
+    Texto con &#xE9;nfasis: Agregar un asterisco para cursiva y dos para negrita</p><pre><code> *&#xE9;nfasis* (cursiva)</code></pre><p>&gt;
+     <strong>&#xE9;nfasis fuerte</strong> (negrita)
+    C&#xF3;digo: Se utiliza el acento grave para identificar c&#xF3;digo
+&gt;
+     <code>C&#xF3;digo</code></p><pre><code>     C&#xF3;digo en
+     varias l&#xED;neas</code></pre><pre><code>Listas:</code></pre><p>&gt;</p><pre><code> * Un elemento en una lista no ordenada
+ * Otro elemento en una lista
+ 1. Elemento en una lista enumerada u ordenada.
+ 2. Otro elemento
+Enlaces:</code></pre></div></div><pre><code> [Texto del enlace aqu&#xED;](URL &quot;T&#xED;tulo del enlace&quot;)</code></pre>
+<hr><div class="callout callout-warning"><h4 id="2-github-desktop">2. Github Desktop</h4><div><h3 id="instalaci&#xF3;n">Instalaci&#xF3;n</h3><p>Para instalar Github APP en windows se ha accedido a la <a href="https://desktop.github.com/" target="_blank">p&#xE1;gina oficial </a> e se instal&#xF3; la version de desktop que nos permite trabajar con una interfaz
 <img src="images/github.PNG"></p><p>Una vez instalado el mismo podremos trabajar con los respositorios vinculados a nuestra cuenta de GitHub, as&#xED; como crear, clonar los mismos y trabajar con m&#xFA;ltiples ramas mediante una interfaz gr&#xE1;fica.
 <img src="images/gitdesk.PNG"></p></div></div><hr><div class="callout callout-danger"><h4 id="3-gh-pages"> 3. Gh-Pages</h4><div><h3 id="&#xBF;qu&#xE9;-son">&#xBF;Qu&#xE9; son?</h3><p>Se trata de una herramienta de Git hub que permite desplegar tu p&#xE1;gina web de manera sencilla. Simplemente creando una rama llamada &quot;gh-pages&quot; y empujando los archivos a ella.</p><h3 id="&#xBF;c&#xF3;mo-se-utilizan">&#xBF;C&#xF3;mo se utilizan?</h3><p><strong><em>1. Crear un archivo index</em></strong>
     Dentro de github.com creamos un nuevo repositorio o vamos a uno ya existente. hacemos click en <em>Create a new file</em>.</p><p><strong><em>2. Escribimos el contenido del archivo</em></strong>
@@ -513,7 +518,7 @@ flexible que proporciona un conjunto s&#xF3;lido de caracter&#xED;sticas para la
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"GitBook","level":"1.2","depth":1,"path":"sections/section1/example1.md","ref":"sections/section1/example1.md","articles":[{"title":"¿Qué es?","level":"1.2.1","depth":2,"path":"sections/section1/example1.md","ref":"sections/section1/example1.md","articles":[]},{"title":"Utilización","level":"1.2.2","depth":2,"path":"sections/section1/example2.md","ref":"sections/section1/example2.md","articles":[]},{"title":"Markdown","level":"1.2.3","depth":2,"path":"sections/section1/example4.md","ref":"sections/section1/example4.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=3.0.0","theme":"default","variables":{},"plugins":["youtube","bootstrap-callout"],"pluginsConfig":{"youtube":{},"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2016-09-28T16:59:03.484Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-28T16:59:59.338Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"GitBook","level":"1.2","depth":1,"path":"sections/section1/example1.md","ref":"sections/section1/example1.md","articles":[{"title":"¿Qué es?","level":"1.2.1","depth":2,"path":"sections/section1/example1.md","ref":"sections/section1/example1.md","articles":[]},{"title":"Utilización","level":"1.2.2","depth":2,"path":"sections/section1/example2.md","ref":"sections/section1/example2.md","articles":[]},{"title":"Markdown","level":"1.2.3","depth":2,"path":"sections/section1/example4.md","ref":"sections/section1/example4.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=3.0.0","theme":"default","variables":{},"plugins":["youtube","bootstrap-callout"],"pluginsConfig":{"youtube":{},"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2016-09-28T17:03:08.544Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-28T17:04:02.890Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
