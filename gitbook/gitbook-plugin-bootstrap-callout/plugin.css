@@ -11,7 +11,7 @@
 .book.color-theme-2 .callout {
     border: 1px solid #2f3549;
 }
-.callout h4 {
+.callout h1 {
     margin-top: 0;
     margin-bottom: 1em;
 }
@@ -27,36 +27,36 @@
 .callout-default {
     border-left-color: #777 !important;
 }
-.callout-default h4 {
+.callout-default h1 {
     color: #777 !important;
 }
 .callout-primary {
     border-left-color: #428bca !important;
 }
-.callout-primary h4 {
+.callout-primary h1 {
     color: #428bca !important;
 }
 .callout-success {
     border-left-color: #5cb85c !important;
 }
-.callout-success h4 {
+.callout-success h1 {
     color: #5cb85c !important;
 }
 .callout-danger {
     border-left-color: #d9534f !important;
 }
-.callout-danger h4 {
+.callout-danger h1 {
     color: #d9534f !important;
 }
 .callout-warning {
     border-left-color: #f0ad4e !important;
 }
-.callout-warning h4 {
+.callout-warning h1 {
     color: #f0ad4e !important;
 }
 .callout-info {
     border-left-color: #5bc0de !important;
 }
-.callout-info h4 {
+.callout-info h1 {
     color: #5bc0de !important;
 }
