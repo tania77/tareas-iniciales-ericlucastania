@@ -2,11 +2,11 @@
 
  
 
-> #### primary::1. Gitbook
+> #### primary::1. Gitbook 
 
+> ![](icons/gitbook.PNG)
 
-> ### ¿Qué es?
-
+> ### ¿Qué es?  
 
 
 > Gitbook es una herramienta que nos permite crear libros y
@@ -14,8 +14,7 @@ documentos utilizando sintaxis Markdown o AsciiDoc. Estos
 libros una vez creados, pueden ser visualizados en web, o
 pueden ser exportados como e-book o pdf. {%youtube%} https://www.youtube.com/watch?v=9bZkp7q19f0 {%endyoutube%}
 
-> Tiene una plataforma web donde una vez identificados se puede publicar 
-libros de forma gratuita.
+> Tiene una plataforma web donde una vez identificados se puede publicar libros de forma gratuita.
 
 
 > ### Utilización
@@ -35,12 +34,10 @@ para ello tendremos que elegir un título y un modo. Que podrá ser enlazando el
 contenido con Github o dejarlo en Gitbook.
 
 
-> ### Markdown
+> ### Markdown ![](icons/markdo.PNG)
 
-
-## Markdown
-
-
+> Para el desarrollo de este documento se ha utilizado Markdown. Aquí las multiples opciones que ofrece este lenguaje.
+>
     # Encabezado h1
     ## Encabezado h2
     ### Encabezado h3
@@ -48,40 +45,43 @@ contenido con Github o dejarlo en Gitbook.
     ##### Encabezado h5
     ###### Encabezado h6
     Citas: Para citar solo es necesario escribir una cuña antes del texto
-
-    > La vida es muy corta para aprender Alemán. -Tad Marburg
+>
+    La vida es muy corta para aprender Alemán. -Tad Marburg
     Texto con énfasis: Agregar un asterisco para cursiva y dos para negrita
-
+>
      *énfasis* (cursiva)
-
+>
      **énfasis fuerte** (negrita)
     Código: Se utiliza el acento grave para identificar código
-
+>
      `Código`
      ```
      Código en
      varias líneas
      ```
     Listas:
-
+>
      * Un elemento en una lista no ordenada
      * Otro elemento en una lista
      1. Elemento en una lista enumerada u ordenada.
      2. Otro elemento
     Enlaces:
-
+>
      [Texto del enlace aquí](URL "Título del enlace")
 
 ----------
 
-> #### warning::2. Github Desktop
+> #### warning:: 2. Github Desktop  
+> ![](icons/git.PNG)
 ### Instalación
 
 > Para instalar Github APP en windows se ha accedido a la [página oficial ](https://desktop.github.com/) e se instaló la version de desktop que nos permite trabajar con una interfaz
 ![](images/github.PNG)
 
 > Una vez instalado el mismo podremos trabajar con los respositorios vinculados a nuestra cuenta de GitHub, así como crear, clonar los mismos y trabajar con múltiples ramas mediante una interfaz gráfica.
-![](images/gitdesk.PNG)
+
+
+> ![](images/gitdesk.PNG)
 
 
 
@@ -89,7 +89,8 @@ contenido con Github o dejarlo en Gitbook.
 
 
 > #### danger:: 3. Gh-Pages 
-### ¿Qué son?
+> ![](icons/gh-pages.PNG)
+> ### ¿Qué son?
 
 > Se trata de una herramienta de Git hub que permite desplegar tu página web de manera sencilla. Simplemente creando una rama llamada "gh-pages" y empujando los archivos a ella.
 > ### ¿Cómo se utilizan?
@@ -112,6 +113,7 @@ contenido con Github o dejarlo en Gitbook.
 
 
 > #### success:: 4. Despliegue en Gitbook 
+> ![](icons/gitbook.PNG)
 
 >  GitBook está implementando usando node.js, podemos instalarlo usando NPM:
 
@@ -130,14 +132,14 @@ para extraer metadatos del documento.
 ----------
 
 > #### warning::5. NodeJS
-> ### ¿Qué es?
+> ### ¿Qué es?   ![](icons/help.PNG)
 Node es un intérprete Javascript del lado del servidor que cambia la noción de cómo debería trabajar un servidor. Su meta es permitir a un programador construir aplicaciones altamente escalables y escribir código que maneje decenas de miles de conexiones simultáneas en una sólo una máquina física.
 
 > ### Instalación
 > Para instalar ***NodeJS*** se ha accedido a la [página oficial de nodeJS](https://nodejs.org/en/)
-> donde se ha encontrado dos versiones, una estable y la ultima version reciente.Se instaló la versión estable.![Version estable nodejs](images/nodejs.jpg)
+> donde se ha encontrado dos versiones, una estable y la ultima version reciente.Se instaló la versión estable.![Version estable nodejs](images/nodejs.PNG)
 
-> ### npm
+> ### NPM
 > Es el manejdor por defecto para Node.js, un entorno de ejecucion para JavaScript. Se ejecuta desde la linea de comandos y maneja las dependencias para una aplicación, es el equivalente a gemspec de ruby.
 Ademas permite a los usuarios instalar aplicaciones Node.js que se encuentran en el repositorio. La sintaxis para instalar un modulo es:
 
@@ -149,7 +151,7 @@ Ademas permite a los usuarios instalar aplicaciones Node.js que se encuentran en
 
 > ## Comprobación de **npm**
 
-> Para comprobar el correcto funcionamiento de npm hemos ejecutado el comando : ```npm version```. Tras la correcta ejecución del mismo damos por adecuada la intrepretación de comandos en el mismo.
+> Para comprobar el que npm se ha instalado correctamente hemos ejecutado el comando : ```npm version```. Tras la correcta ejecución del mismo damos por adecuada la intrepretación de comandos en el mismo.
 
 > ![](images/npmversion.PNG)
 
@@ -173,12 +175,116 @@ flexible que proporciona un conjunto sólido de características para las aplica
 
 
 
-Para el desarrollo de la práctica instalaremos la última versión reciente para asegurarnos la disponibilidad de sus servicios.
+> Para el desarrollo de la práctica instalaremos la última versión reciente para asegurarnos la disponibilidad de sus servicios.
+
 ----------
 
 > #### info:: 6. Gulp
+
+> ![](icons/gulp1.PNG)
+
 > ## ¿Qué es Gulp?
 >Es una herramienta que permite automatizar tareas comunes de desarrollo.Se suele utilizar para tareas de front-end como recargar la página
 ,optimizar activos como CSS, JavaScript,las imágenes y un sin fin de demás tareas
 
-    
+## Pon a prueba tus conocimientos
+### Recuerda!,el saber no ocupa lugar
+{%mcq ans="o1"%}
+{%title%} 1.¿Qué es Gitbook?
+{%o1%} Una lenguaje de programación
+{%o2%} Un herramienta que nos permite documentar
+{%o3%} Una aplicación de escritorio
+{%o4%} Un proyecto de Google
+{%endmcq%}
+
+
+
+{%mcq ans="o1"%}
+{%title%} 2.¿Qué es el Markdown?
+{%o1%} Un lenguaje que nos permite escribir y exportar a diferentes formatos
+{%o2%} Un plugin de Gitbook
+{%o3%} Una herramienta de desarrollador de Google Chrome
+{%o4%} La B y la C son correctas
+{%endmcq%}
+
+
+
+{%mcq ans="o1"%}
+{%title%} 3.¿Para que sirve Gulp?
+{%o1%} Para automatizar tareas comunes de desarrollo
+{%o2%} Para añadir fechas a Gitbook
+{%o3%} Para sincronizar Gitbook con un repositorio
+{%o4%} Para codificar en C#
+{%endmcq%}
+
+
+
+{%mcq ans="o3"%}
+{%title%} 4.¿Cuál de las siguientes cuestiones no es cierta respecto a Node.JS?
+{%o1%} Es el manejdor por defecto para Node.js
+{%o2%} Se ejecuta desde la linea de comandos
+{%o3%} No se ejecuta desde la linea de comandos
+{%o4%} Permite a los usuarios instalar aplicaciones Node.js que se encuentran en el repositorio
+{%endmcq%}
+
+
+
+{%mcq ans="o1"%}
+{%title%} 5.¿Cuál es el sitio idóneo para encontrar información relacionada con los modulos requeridos por el proyecto?
+{%o1%} En el Gulp
+{%o2%} En el README
+{%o3%} En el SUMMARY
+{%o4%} En el Package.json
+{%endmcq%}
+
+
+
+{%mcq ans="o1"%}
+{%title%} 6.¿Qué son las gh-pages?
+{%o1%} Un conjunto de aplicaciones web para depurar tu código javascript
+{%o2%} Una herramienta para añadir estilo a tu página web
+{%o3%} Una herramienta de Github que permite desplegar una página web de manera sencilla
+{%o4%} Un conjunto de normas y directrices para escribir codigo html de forma correcta
+{%endmcq%}
+
+
+{%mcq ans="o1"%}
+{%title%} 7.¿Cuál de los siguientes comandos se utiliza para combrobar que se ha instalado correctamente npm?
+{%o1%} npm version
+{%o2%} npm run version
+{%o3%} git version
+{%o4%} Ninguno de los anteriores comandos es correcto
+{%endmcq%}
+
+
+
+{%mcq ans="o1"%}
+{%title%} 8.¿Cuál es el comando que se utiliza para instalar Gitbook?
+{%o1%} npm install gitbook -g
+{%o2%} git install gitbook 
+{%o3%} Ninguna de las opciones es correcta
+{%o4%} npm gitbook
+{%endmcq%}
+
+
+{%mcq ans="o1"%}
+{%title%} 9.El orden correcto para utilizar gh-pages es...
+{%o1%} Configurar el repositorio, hacer commit, crear un archivo index, escribir el contenido del archivo
+{%o2%} Crear un archivo index, hacer commit, escribir el contenido del archivo, configurar el repositorio
+{%o3%} Configurar el repositorio, crear un archivo index, escribir el contenido del archivo, hacer commit
+{%o4%} Crear un archivo index, escribir el contenido del archivo, hacer commit y configurar el repositorio
+{%endmcq%}
+
+
+
+{%mcq ans="o1"%}
+{%title%} 10.¿Qué es Express?
+{%o1%} Es el manejador por defecto para Node.js, un entorno de ejecucion para JavaScript
+{%o2%} Una infraestructura de aplicaciones web que proporciona un conjunto de caracteristicas para aplicaciones web y moviles
+{%o3%} Un framework para Node con la particularidad de permitir crear documentación a partir de un README y un SUMMARY
+{%o4%} Un lenguaje de programación basado en javascript
+{%endmcq%}
+
+
+
+

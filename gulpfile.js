@@ -1,55 +1,14 @@
-// Dependencies
-
-var gulp = require('gulp'),
-	 run = require('gulp-run'),
-	 //livereload = require('gulp-livereload'),
-	 browserSync = require('browser-sync').create(),
-	 notify = require("gulp-notify");
-	 
-
-var paths = {
+//GULP
+var gulp  = require('gulp');
+var shell = require('gulp-shell');
  
-  scripts: [
-    './scripts.js/**'
-  ],
-  
-  
-  html: [
-  './gh-pages/index.html'
-  ],
-  
-  book: [
-  './txt/*'
-  ]
-  
+gulp.task('deploy', function () {
+  return gulp.src('scripts/*')
+    .pipe(shell([
+      'npm run build && npm run deploy-gitbook && npm run deploy-wiki'
+    ]
+    ));
+})
 
 
-};
-
-// Static server
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./gh-pages/"
-        }
-    });
-}); 
-
-
-gulp.task('build',function() {
-    return run('./scripts/generate-gitbook').exec();
-});
-
-gulp.task('html', function(){
-  browserSync.reload();
- 
-});
-
-gulp.task('watch', function(){
-  gulp.watch(paths.book,['build']);
-  gulp.watch(paths.html,['html']);
- 
-});
-
-// Defaults
-gulp.task('default', ['watch']);
+gulp.watch('gh-pages', ['deploy']);

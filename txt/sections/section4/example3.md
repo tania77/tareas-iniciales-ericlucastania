@@ -1,4 +1,4 @@
-### Package.json
+> #### warning:: Package.json
 
-This document is all you need to know about what's required in your package.json file. It must be actual JSON, not just a JavaScript object literal.
-A lot of the behavior described in this document is affected by the config settings described in npm-config.
+> Este documento es todo lo que necesitas saber acerca de lo que requiere tu proyecto. Está escrito en JSON, no es un objeto 
+literal de javascript. Todo lo que se describe en este documento afecta a la configuración del proyecto.

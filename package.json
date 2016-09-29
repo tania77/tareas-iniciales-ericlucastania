@@ -15,8 +15,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tania77/tareas-iniciales-ericlucastania",
-    "wiki": "https://github.com/tania77/tareas-iniciales-ericlucastania.wiki.git"
+    "url": "git@github.com:tania77/tareas-iniciales-ericlucastania.git",
+    "wiki": "git@github.com:tania77/tareas-iniciales-ericlucastania.wiki.git"
   },
   "keywords": [
     "gitbook",
@@ -38,7 +38,8 @@
     "gitbook-cli": "^0.3.4",
     "gulp": "^3.9.1",
     "gulp-livereload": "^3.8.1",
-    "gulp-notify": "^2.2.0"
+    "gulp-notify": "^2.2.0",
+    "gulp-shell": "^0.5.2"
   },
   "dependencies": {
     "express": "^4.14.0",
